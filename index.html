@@ -52,7 +52,7 @@
         removeClassName(shape, 'cube');
         addClassName(shape, 'ring');
       }
-      
+
       var stage = document.getElementById('stage');
       if (hasClassName(shape, 'ring'))
         stage.style.webkitTransform = 'translateZ(-200px)';
@@ -62,9 +62,9 @@
   </script>
 </head>
 <body>
-
+  <div class="main-area center-text" style="background-image:url(images/bfobb.jpg);" >
   <div style="text-align: right;padding: 15px;"><a href="#" class="classname" onclick="toggleShape()">Change</a></div>
-  
+
   <div id="container">
     <div id="stage">
       <div id="shape" class="cube backfaces">

@@ -21,7 +21,7 @@ body {
       -webkit-transition: -webkit-transform 2s;
       -webkit-transform-style: preserve-3d;
     }
-    
+
     #shape {
       position: relative;
       top: 200px;
@@ -30,7 +30,7 @@ body {
       width: 200px;
       -webkit-transform-style: preserve-3d;
     }
-    
+
     .plane {
       position: absolute;
       height: 200px;
@@ -59,7 +59,7 @@ body {
       from { -webkit-transform: rotateY(0); }
       to   { -webkit-transform: rotateY(360deg); }
     }
-	
+
     .one {
 		background-image: url(../img/1.jpg);
 		background-size: 100% 100%;
@@ -161,7 +161,7 @@ body {
       opacity: 0.2;
       -webkit-transform: scale3d(1.2, 1.2, 1.2) rotateX(-90deg) translateZ(100px) rotate(180deg);
     }
-	
+
 	#shape:hover.cube > .one {
 		opacity: 0.9;
 		-webkit-transform: scale3d(1.5, 1.5, 1.5) rotateX(90deg) translateZ(130px);
@@ -268,11 +268,11 @@ body {
     .controls {
       padding: 5px;
     }
-	
+
     .controls > div {
       margin: 10px;
     }
-	
+
 	.audio {
       position: absolute;
 	  top: 15px;
@@ -326,3 +326,10 @@ body {
 	position:relative;
 	top:1px;
 }
+
+/* CSS background */
+.main-area{ position: relative; z-index: 1; height: 100%; padding: 0 20px; background-size: cover;
+	box-shadow: 2px 5px 30px rgba(0,0,0,.3); color: #fff; }
+
+.main-area:after{ content:''; position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;
+	opacity: .7; background: linear-gradient(-9deg, #6a82fb 0%, #6a82fb 40%, #fc5c7d 100%); }
