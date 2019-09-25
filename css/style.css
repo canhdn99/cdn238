@@ -326,10 +326,3 @@ body {
 	position:relative;
 	top:1px;
 }
-
-/* CSS background */
-.main-area{ position: relative; z-index: 1; height: 100%; padding: 0 20px; background-size: cover;
-	box-shadow: 2px 5px 30px rgba(0,0,0,.3); color: #fff; }
-
-.main-area:after{ content:''; position: absolute; top: 0; bottom: 0;left: 0; right: 0; z-index: -1;
-	opacity: .7; background: linear-gradient(-9deg, #6a82fb 0%, #6a82fb 40%, #fc5c7d 100%); }
